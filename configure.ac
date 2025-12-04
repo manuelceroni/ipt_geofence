@@ -148,6 +148,8 @@ else
    AC_MSG_RESULT(no)
 fi
 
+LIBS="${LIBS} -ldl"
+
 if test $SYSTEM == "FreeBSD" || test $SYSTEM == "Darwin"; then
    CXX=c++
 fi
